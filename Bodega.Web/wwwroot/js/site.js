@@ -13,6 +13,10 @@ app.config(["$routeProvider",
                 templateUrl: "/Templates/Home.html",
                 controller: "homeCtrl"
             }).
+            when("/addMenu", {
+                templateUrl: "/Templates/AddMenu.html",
+                controller: "menuCtrl"
+            }).
             otherwise({
                 redirectTo: "/home",
                 controller: "homeCtrl"

@@ -55,7 +55,27 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - Bodega.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <i class="fa fa-envelope fa-lg"></i>
+                            <label>Bodega@live.se</label>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fa fa-phone-square fa-lg"></i>
+                            <label><a href="tel:070-543 34 40" class="tel-link">070-543 34 40</a></label>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fa fa-map-marker fa-lg"></i>
+                            <label>Oskarsparken 1 70212</label>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="col-md-4 text-center">
+                    &copy; 2019 - Bodega.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>*@
+            </div>
         </div>
     </footer>
 
@@ -86,7 +106,7 @@
                 integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
         </script>
     </environment>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+   
 
     @RenderSection("Scripts", required: false)
 </body>

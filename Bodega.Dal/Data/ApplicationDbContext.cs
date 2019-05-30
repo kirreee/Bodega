@@ -14,5 +14,7 @@ namespace Bodega.Web.Data
         {
         }
 
+        public DbSet<Menu> Menus { get; set; }
+
     }
 }

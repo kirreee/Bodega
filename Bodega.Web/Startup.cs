@@ -15,6 +15,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Bodega.Dal.Models;
 using Bodega.Services.Helpers;
+using Bodega.Services.Interfaces;
+using Bodega.Services.Services;
 
 namespace Bodega.Web
 {
@@ -45,6 +47,7 @@ namespace Bodega.Web
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.AddTransient<IMenuRepository, MenuRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
